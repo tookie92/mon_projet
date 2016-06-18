@@ -1,0 +1,8 @@
+<%= simple_form_for @article do |f| %>
+	<%= f.file_field :image %>
+	<%= f.input :titre %>
+	<%= f.input :contenu %>
+	<%= f.input :auteur %>
+	<%= f.input :tag %>
+	<%= f.button :submit %>
+<% end -%>

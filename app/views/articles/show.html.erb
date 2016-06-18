@@ -1,0 +1,12 @@
+<h1><center><%= @article.titre %></center></h1>
+<p><%= @article.contenu -%></p>
+<%= image_tag @article.image.thumb('400x200#').url %>
+
+<% if user_signed_in? %>
+	<% if can? :update, @article %>
+		<%= link_to "Modifier", edit_article_path %>
+	<% end %>
+	<% if can? :destroy, @article %>
+		<%= link_to "Supprimer", @article, method: :delete, data: {confirm: 'Are you sure?' } %>
+	<% end %>
+<% end %>

@@ -1,0 +1,14 @@
+
+<hr>
+
+
+<% @articles.each do |article| %>
+	<%#= image_tag article.image.url %>
+	<h2><%= article.titre %></h2>
+	<i>tag:<%= article.user.email %></i>
+	<p><%= truncate(article.contenu, length: 40) %>
+		<span><%= link_to "lire la suite", article_path(article) %></span>
+	</p>
+		
+
+<% end -%>
