@@ -19,20 +19,17 @@ class ArticlesController < ApplicationController
   end
 
   def edit
-  	
   end
 
   def show
   end
 
   def update
-  	
   	@article.update(article_params)
   	redirect_to articles_path
   end
 
   def destroy
-  	
   	@article.destroy
   	redirect_to articles_path
   end
