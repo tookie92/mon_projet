@@ -14,6 +14,7 @@ gem 'devise', '~> 4.1', '>= 4.1.1'
 gem 'cancan', '~> 1.6', '>= 1.6.10'
 gem 'simple_form', '~> 3.2', '>= 3.2.1'
 gem 'dragonfly', '~> 1.0', '>= 1.0.12'
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 
 group :development, :test do
   gem 'byebug'
