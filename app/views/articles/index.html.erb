@@ -1,16 +1,21 @@
 <% content_for :nav do %>
       <%= render 'layouts/partials/nav' %>
 <% end %>
-<hr>
 
 
+<div class="container">
+    <div class="row">
+    	<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+    		 <div class="post-preview">
 <% @articles.each do |article| %>
 	<%#= image_tag article.image.url %>
 	<h2><%= article.titre %></h2>
-	<i>tag:<%= article.user.email %></i>
+	<i><%= article.user.email %></i>
 	<p><%= truncate(article.contenu, length: 40) %>
 		<span><%= link_to "lire la suite", article_path(article) %></span>
 	</p>
-		
-
 <% end -%>
+			 </div>
+		</div>
+    </div>
+</div>	

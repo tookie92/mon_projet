@@ -1,5 +1,12 @@
 Rails.application.routes.draw do
 
+  namespace :admin do
+    resources :users
+    resources :articles
+    resources :comments
+    root to: "articles#index"
+  end
+
   devise_for :users
   root 'articles#index'
   resources :articles do
