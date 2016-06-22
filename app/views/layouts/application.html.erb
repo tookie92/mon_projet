@@ -15,10 +15,7 @@
 </head>
 <body>
 	<%=  yield  :nav %>
-    <% content_for :nav do %>
-      <title>A simple page</title>
-      <%= render 'layouts/partials/nav' %>
-    <% end %>
+    
 	 <p class="notice"><%= notice %></p> 
 	 <p class="alert"><%= alert %></p>
 
