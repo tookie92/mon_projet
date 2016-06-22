@@ -48,11 +48,13 @@
                     <div class="site-heading">
                     	<% if user_signed_in? %>
                         <h1><%= current_user.prenom %>&nbsp;<%= current_user.nom %></h1>
+                        <hr class="small">
+                        <span class="subheading">Humeur :<%= current_user.statut %></span>
                         <% else %>
                         <h1>Bienvenue</h1>
-                        <% end %>
                         <hr class="small">
-                        <span class="subheading">A Clean Blog Theme by Start Bootstrap</span>
+                        <span class="subheading">Chacun blogue a sa mani&eacute;re</span>
+                        <% end %>
                     </div>
                 </div>
             </div>
