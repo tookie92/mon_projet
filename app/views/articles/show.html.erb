@@ -1,3 +1,7 @@
+<% content_for :nav do %>
+  <title>A simple page</title>
+  <%= render 'layouts/partials/nav' %>
+<% end %>
 <h1><center><%= @article.titre %></center></h1>
 <p><%= @article.contenu -%></p>
 <%= image_tag @article.image.thumb('400x200#').url %>
